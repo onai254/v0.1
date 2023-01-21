@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: node-app-deployment
+  template:
+    metadata:
+      labels:
+        app: node-app-deployment
+    spec:
+      containers:
+      - name: node-app-deployment
+        image: onai57/app-node-image
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 1010

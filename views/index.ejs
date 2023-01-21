@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Microservice</title>
+  
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-top: 50px;
+    }
+    nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.form-style {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.form-style label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-style input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-style input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <li><a href="/">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+    </nav>
+    <h1>lets get Microservice</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form action="/register" method="post" class="form-style">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <label for="password-confirm">Confirm Password:</label>
+          <input type="password" id="password-confirm" name="password-confirm" required>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        
+      </div>
+      <div class="col-6">
+        <!-- Content for the second column -->
+      </div>
+      <div class="col-6">
+        <!-- Content for the second column -->
+      </div>
+    </div>
+    
+
+  </div>
+  
+</body>
+</html>
